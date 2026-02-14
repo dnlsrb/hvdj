@@ -1,5 +1,6 @@
  
 window.onload = function() {
+
 // Simple check for mobile user agents
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
@@ -16,13 +17,13 @@ if (!isMobile && !isSmallScreen) {
 
  
 var i = 0;
-var txt = 'Happy Valentines day.. Jov!';
-var speed = 50;
+var txt = 'Happy Valentines day.. Jov! ';
+var speed2 = 120;
 
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("demo").innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(typeWriter, speed2);
   }
 }
