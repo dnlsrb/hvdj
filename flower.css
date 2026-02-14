@@ -199,7 +199,7 @@ body{
 
     clip-path: ellipse(50% 50% at 50% 50%);
     transform-origin: center bottom;
-    animation: open-flower 2s 1s backwards;
+    animation: open-flower 10s 1s backwards;
 }
 
 .flower__leaf--1{
@@ -246,20 +246,7 @@ body{
     background-image: linear-gradient(to left bottom, #ffa085 ,#eb8b8b,#492f2f 98%);
 }
 
-.flower__fall-down--yellow{
-    animation: flower-fall-down-yellow  15s 1.2s linear forwards;
-}
-
-.flower__fall-down--pink{
-    bottom: 4vmin;
-    animation: flower-fall-down-pink 15s 1.2s linear forwards;
-}
-
-.flower__fall-down--purple{
-    bottom: 4vmin;
-    animation:flower-fall-down-purple  15s 1.2s linear forwards  ;
-}
-
+ 
 
 @keyframes open-flower{
         0%{
@@ -273,91 +260,4 @@ body{
         transform: translateX(-50%) scale(0);
     }
 }
-
-@keyframes flower-fall-down-pink {
-
-    0%{
-        transform: rotate(-20deg);
-    }
-
-    50%{
-        transform: rotateX(-100deg);
-    }
-    
-    100%{
-        transform:translate(90vmin,32vmin);
-    }
-
-}
-
-@keyframes flower-fall-down-yellow {
-
-    0%{
-        transform: rotate(-55deg);
-    }
-
-    50%{
- 
-        transform: rotateX(-100deg);
-    }
-
-    100%{
-        transform:translate(2vmin,90vmin) rotate(150deg);
-    }
-
-}
-
-@keyframes flower-fall-down-purple {
-
-    0%{
-        transform: rotate(-50deg);
-    }
-
-    25%{
-    
-        transform: rotateX(-80deg);
-        perspective: 0px;
-    }
-
-    50%{
-        perspective: 0px;
-        transform:translate(-30vmin,2vmin) rotate(90deg);
-    }
-
-    75%{
-        perspective: 0px;
-        transform:translate(-50vmin,-2vmin);
-    }
-
-    100%{
-        transform-origin: center;
-        transform:translate(-70vmin,-2vmin) rotateY(-80deg) rotateX(35deg);
-    }
-
-}
-
-@keyframes flower-falling {
-    0%,100%{
-        transform-origin: center;
-        transform:translate(-34vmin,-2vmin) rotateY(-80deg) rotateX(35deg);
-    }
-
-    25%{
-        transform-origin: center;
-        transform:translate(-34.4vmin,-2vmin) rotateY(-84deg) rotateX(35deg);
-    }
-
-    50%{
-        transform-origin: center;
-        transform:translate(-32vmin,-4.2vmin) rotateY(-80deg) rotateX(35deg);
-    }
-
-    75%{
-        transform-origin: center;
-        transform:translate(-36vmin,1.1vmin) rotateY(-80deg) rotateX(35deg);
-    }
-}
-
-
-
  
