@@ -1,0 +1,22 @@
+ 
+.text2{
+    position: fixed;
+    display: flex;
+    top: 50%;           
+    left: 30%;    
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+     position: fixed;
+    display: flex;
+    top: 55%;           
+    left: 27%;    
+    color: white;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+ 

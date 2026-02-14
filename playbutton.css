@@ -1,0 +1,44 @@
+.play-button {
+    width: 80px;
+    height: 80px;
+    background: #fff; /* circle color */
+    border-radius: 50%; /* make it circular */
+    position: fixed;
+    cursor: pointer;
+    display: flex;
+     position: fixed;       /* fixed to the viewport */
+    top: 50%;              /* vertical center */
+    left: 50%;             /* horizontal center */
+    transform: translate(-50%, -50%);  
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+ 
+}
+
+ 
+
+.button {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: linear-gradient(30deg, rgb(19, 19, 44) 20%, rgb(21, 5, 66) 80%);
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+  align-items: center;
+  border: 0;
+}
+
+.button:is(:hover, :focus) {
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 45px rgba(193,244,246,0);
+  }
+}
